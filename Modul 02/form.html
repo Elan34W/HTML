@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Rumah</title>
+    <style>
+        th, td {
+          border:1px solid black;
+          border-style: none;
+          vertical-align: top;
+        }
+        textarea {
+          vertical-align: top;
+        }
+        input[type="checkbox"] {
+        width: 15px; 
+        height: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>FORM REGISTRASI</h1> 
+    <form action="" method="get">
+        <fieldset style="width: 600px;">
+            <legend>Biodata</legend>
+            <table>
+                    <!-- Form Nama -->
+                <tr>
+                  <td><label for="nama">Nama Mahasiswa </label></td>
+                  <td>: <input type="text" id="nama" name="nama" placeholder="Nama Anda"></td>
+                </tr>
+                    <!-- Form NIM -->
+                <tr>
+                  <td><label for="nim">No Induk Mahasiswa (NIM)  </label></td>
+                  <td>: <input type="text" id="nim" name="nim" placeholder="123456789"></td>
+                </tr>
+                    <!-- Form Alamat -->
+                <tr>
+                    <td><label for="alamat">Alamat Mahasiswa   </label></td>
+                    <td>: <textarea name="alamat" cols="30" rows="5" placeholder="Alamat anda"></textarea></td>
+                </tr>
+                    <!-- Form Tanggal Lahir -->
+                <tr>
+                    <td><label for="tanggal_lahir">Tanggal Lahir   </label></td>
+                    <td>:                 
+                        <select name="pilihan_tanggal">
+                            <option value="01" selected>01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                        </select>
+                        <select name="pilihan_bulan">
+                            <option value="01" selected>January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select name="pilihan_tahun">
+                            <option value="1990"selected>1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                        </select>
+                    </td>
+                </tr>
+                    <!-- Form Jenis Kelamin -->
+                <tr>
+                    <td><label for="jenis_kelamin">Jenis Kelamin   </label> :</td>
+                    <td> :
+                        <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki"checked>
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                    <!-- Form Upload Foto -->
+                <tr>
+                    <td><label for="upload_foto">Upload Foto   :</label></td>
+                    <td>: <input type="file" id="upload_foto" name="upload_foto"></td>
+                </tr>
+                    <!-- Form Url Website -->
+                <tr>
+                    <td><label for="URL_web">URL Website  :</label></td>
+                    <td> : <input type="url" id="URL_web" name="URL_web" placeholder="URL Website Anda"style="width: 300px;"></td>
+                </tr>
+                    <!-- Form nama perguruan tinggi -->
+                <tr>
+                    <td><label for="perguruan_tinggi">Perguruan Tinggi   :</label></td>
+                    <td> : <input type="text" id="perguruan_tinggi" name="perguruan_tinggi"></td>
+                </tr>
+            </table>
+        </fieldset>
+    
+        <br>
+        <fieldset style="width: 600px;">
+            <legend>Info Akun</legend>
+            <table>
+                    <!-- Form Email -->
+                <tr>
+                    <td><label for="email">Email </label></td>
+                    <td>: <input type="email" id="email" name="email" placeholder="Email Anda"></td>
+                </tr>
+                    <!-- Form Username -->
+                <tr>
+                    <td><label for="username">Username </label></td>
+                    <td>: <input type="text" id="username" name="username" placeholder="Username Anda"></td>
+                </tr>
+                    <!-- Form Password -->
+                <tr>
+                    <td><label for="password">Password </label></td>
+                    <td>: <input type="password" id="password" name="password" placeholder="Password Anda"></td>
+                </tr>
+                    <!-- Form Password Confirm-->
+                <tr>
+                    <td><label for="ulangi_password">Ulangi Password </label></td>
+                    <td>: <input type="password" id="ulangi_password" name="ulangi_password" placeholder="Password Anda"></td>
+                </tr>
+            </table>
+        </fieldset>
+    
+        <br>
+        <fieldset style="width: 600px;">
+            <legend>Kemampuan Dasar</legend>
+            <tr>
+                <td>
+                    
+                </td>
+            </tr>
+                <input type="checkbox" name="HTML" value="HTML" id="HTML"><label for="HTML">HTML</label>
+                <input type="checkbox" name="CSS" value="CSS" id="CSS"><label for="CSS">CSS</label>
+                <input type="checkbox" name="Javascript" value="Javascript" id="Javascript"><label for="Javascript">Javascript</label>
+                <input type="checkbox" name="PHP" value="PHP" id="PHP"><label for="PHP">PHP</label>
+                <input type="checkbox" name="MySQL" value="MySQL" id="MySQL"><label for="MySQL">MySQL</label>
+                <input type="checkbox" name="Laravel" value="Laravel" id="Laravel"><label for="Laravel">Laravel</label>
+                <input type="checkbox" name="React Native" value="React Native" id="React Native"><label for="React Native">React Native</label>
+    
+        </fieldset>
+        <p>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Simpan">
+            <input type="button" value="Button" onclick="">
+        </p>
+    
+    </form>
+    
+</body>
+</html>
