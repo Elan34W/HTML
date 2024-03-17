@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .background-warna {
+            background-color: #ffcc66;
+            width: 400px;
+            height: 400px;
+            margin-right: 100px;
+
+            p {
+                color: black;
+                font-size: 24px;
+                text-align: center; 
+            }
+        }
+
+        .background-gradient {
+            background: linear-gradient(to bottom, #ff6699, #6666ff);
+            width: 400px;
+            height: 400px;
+            margin-right: 100px;
+
+            p {
+                color: yellow;
+                font-size: 24px;
+                text-align: center; 
+            }
+        }
+
+        .background-gambar {
+            background-image: url('foto.png');
+            background-size: cover;
+            width: 400px;
+            height: 400px;
+
+            p {
+                color: white;
+                font-size: 24px;
+                text-align: center; 
+
+            }
+        }
+
+        .container {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background-warna">
+            <p>Hello</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ratione reiciendis autem fugit ex maxime quia pariatur. Incidunt, alias sapiente harum necessitatibus consectetur expedita maxime, quo, non ipsum quis optio</p>
+        </div>
+        <div class="background-gradient">
+            <p>How are you ?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ratione reiciendis autem fugit ex maxime quia pariatur. Incidunt, alias sapiente harum necessitatibus consectetur expedita maxime, quo, non ipsum quis optio</p>
+        </div>
+        <div class="background-gambar">
+            <p>love <3</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ratione reiciendis autem fugit ex maxime quia pariatur. Incidunt, alias sapiente harum necessitatibus consectetur expedita maxime, quo, non ipsum quis optio</p>
+        </div>
+    </div>
+</body>
+</html>

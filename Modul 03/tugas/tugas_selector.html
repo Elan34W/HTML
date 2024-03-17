@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector</title>
+    <style>
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+            outline: auto;
+        }
+
+        p {
+            font-size: 24px;
+        }
+        /* Adjacent Sibling Selector */
+        img + .description {
+            color: blue; /* Change the color of the description */
+            margin-left: 200px; 
+        }
+
+        img + .description + p {
+            color: green; /* Change the color of the paragraph */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Cara Membuka Pintu</h1>
+        <img src="hold.jpg" alt="Example 1">
+        <div class="description">Memegang Gagang Pintu</div>
+        <p>Pertama peganga gagang pintu dengan erat. (Jangan sampai lepas)</p>
+
+        <img src="twist.jpg" alt="Example 2">
+        <div class="description">Memutar Gagang Pintu</div>
+        <p>Kemudian kita harus gagang pintu kesamping sampai dirasa cukup</p>
+
+        <img src="open.jpg" alt="Example 3">
+        <div class="description">Membuka Pintu</div>
+        <p>Setelah itu dorong pintu dan lihat apakah pintu berhasil terbuka</p>
+        <h2>Selamat Mencoba !</h2>
+    </div>
+</body>
+</html>
