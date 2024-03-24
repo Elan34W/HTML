@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+      "sidebar header"
+      "sidebar content"
+      "sidebar footer";
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background: linear-gradient(#875685, #482845);
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    grid-column: 1 / 2;
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+  }
+  
+  .sidebar nav ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: #c7a6c3;
+    text-decoration: none;
+    display: block;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+    border-radius: 30px;
+  }
+  
+  .content {
+    grid-area: content;
+    background-color: #A2A9AC;
+    grid-column: 2 / 3;
+    grid-row: 1 / -2;
+    padding: 30px;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .hero img {
+    width: 100px;
+    display: block;
+    margin-left: 72%;
+    position: relative;
+    top: 140px;
+}
+  
+  .hero-content h1 {
+    color: #333;
+    font-size: 4.5rem;
+    font-family: monospace;
+    color: #572b5d;
+    line-height: 0.5;
+  }
+  
+  .hero-content h2 {color: #000000;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1;
+  }
+  
+  .hero-content p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 70%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  .action-btn {
+    display: inline-block;
+    background-color: #272B39;
+    color: white;
+    padding: 9px 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
+    border-radius: 40px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #A7A5A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .footer ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 70px;
+  }
+  
+  .footer ul li img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+  .footer ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  /* BREAKPOINT TABLET */
+  @media only screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 1fr 1fr 1fr;
+      grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "footer";
+    }
+
+    .sidebar {
+      background: linear-gradient(to right, #a389a3 ,#a16ea1, #482845);
+      display: flex;
+      flex-direction: column;
+      grid-column: 1 / 2;
+      grid-row: 1 / 1;
+    }
+
+    .sidebar ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: -0.4em;
+    }
+
+    .sidebar nav ul li a{
+      color: rgb(240, 226, 240);
+    }
+
+    .content {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      
+    }
+
+    .hero-content{
+      display: grid;
+      place-items: center;
+      
+    }
+
+    .hero img {
+      width: 120px;
+      height: 120px;
+      display: block;
+      margin-left: 40%;
+      margin-bottom: 2%;
+      position: relative;
+      top: 5%;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+    }
+
+    .action-btn {
+      padding: 5px 20px;
+      font-size: 1rem;
+    }
+
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer ul {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .footer ul li {
+      margin-right: 0;
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+  }
